@@ -342,14 +342,9 @@ footer.footer {
   }
 }
 
-.seleccion {
-  text-align: center;
-  padding: 4rem 2rem; /* Espacio general para la sección */
-}
-
 .seleccion p {
   font-size: 1.1rem;
+  text-align: center;
   margin-bottom: 1rem;
   color: #aaa;
-  padding: 0; /* ✅ Eliminamos el padding innecesario */
-}
+}     
