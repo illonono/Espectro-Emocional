@@ -341,3 +341,9 @@ footer.footer {
     font-size: 0.7rem;
   }
 }
+
+.texto-centro {
+  text-align: center;
+  color: #e6edf3;
+  font-family: inherit;
+}
