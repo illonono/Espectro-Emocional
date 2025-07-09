@@ -343,8 +343,12 @@ footer.footer {
 }
 
 .seleccion {
+  font-size: 1.1rem;
   background-color: #1e1e1e;
   text-align: center;
+  margin-bottom: 1rem;
   padding: 4rem 2rem;
-  color: #fff;
+  color: #aaa;
 }
+
+
