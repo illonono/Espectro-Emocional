@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espectro Emocional | Generador de Paletas de Colores para Emociones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="titulo">Espectro Emocional</h1>
+    <nav class="navegacion">
+      <a href="#hero">Inicio</a>
+      <a href="#seleccion">Seleccionar Emoción</a>
+      <a href="#resultado">Paleta</a>
+      <a href="#info">Info</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <h2>Espectro Emocional | Generador de Paletas de Colores para Emociones</h2>
+    <p>Elige una emoción y descubre una paleta de colores diseñada para transmitirla.</p>
+    <a href="#seleccion" class="boton">Comenzar</a>
+  </section>
+
+  <main class="main-content">
+  <!-- Movemos los inputs radio ocultos aquí, justo después de <main>, como hermanos de las secciones -->
+  <input type="radio" name="emotion" id="emo-calma" class="emotion-input" checked>
+  <input type="radio" name="emotion" id="emo-energia" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-misterio" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-felicidad" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-confianza" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-naturaleza" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-romance" class="emotion-input">
+  <!-- Aquí insertamos los nuevos: -->
+  <input type="radio" name="emotion" id="emo-nostalgia" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-euforia" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-esperanza" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-gratitud" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-asombro" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-valentia" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-ternura" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-futurismo" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-vintage" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-minimalismo" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-lujoso" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-onirico" class="emotion-input">
+  <input type="radio" name="emotion" id="emo-espiritual" class="emotion-input">
+
+
+    <!-- Selección de emoción -->
+    <section id="seleccion" class="seleccion">
+  <h2>¿Qué Emoción quieres plasmar con colores Hoy?</h2>
+  <div class="emotion-buttons">
+    <label for="emo-calma" class="emotion-label">Calma</label>
+    <label for="emo-energia" class="emotion-label">Energía</label>
+    <label for="emo-misterio" class="emotion-label">Misterio</label>
+    <label for="emo-felicidad" class="emotion-label">Felicidad</label>
+    <label for="emo-confianza" class="emotion-label">Confianza</label>
+    <label for="emo-naturaleza" class="emotion-label">Naturaleza</label>
+    <label for="emo-romance" class="emotion-label">Romance</label>
+    <!-- Nuestras 13 nuevas: -->
+    <label for="emo-nostalgia" class="emotion-label">Nostalgia</label>
+    <label for="emo-euforia" class="emotion-label">Euforia</label>
+    <label for="emo-esperanza" class="emotion-label">Esperanza</label>
+    <label for="emo-gratitud" class="emotion-label">Gratitud</label>
+    <label for="emo-asombro" class="emotion-label">Asombro</label>
+    <label for="emo-valentia" class="emotion-label">Valentía</label>
+    <label for="emo-ternura" class="emotion-label">Ternura</label>
+    <label for="emo-futurismo" class="emotion-label">Futurismo</label>
+    <label for="emo-vintage" class="emotion-label">Vintage</label>
+    <label for="emo-minimalismo" class="emotion-label">Minimalismo</label>
+    <label for="emo-lujoso" class="emotion-label">Lujoso</label>
+    <label for="emo-onirico" class="emotion-label">Onírico</label>
+    <label for="emo-espiritual" class="emotion-label">Espiritual</label>
+  </div>
+</section>
+
+
+    <!-- Resultados: paletas y explicaciones -->
+    <section id="resultado" class="resultado">
+      <!-- Cada bloque .palette-box se mostrará según :checked -->
+      <!-- Calma -->
+      <div class="palette-box calma">
+        <h2>Paleta: Calma / Serenidad</h2>
+        <div class="palette-blocks">
+          <div class="color-block" style="--col: #a3d5d3;">#A3D5D3</div>
+          <div class="color-block" style="--col: #eaf4f4;">#EAF4F4</div>
+          <div class="color-block" style="--col: #7ea9a7;">#7EA9A7</div>
+          <div class="color-block" style="--col: #c5e1e0;">#C5E1E0</div>
+          <div class="color-block" style="--col: #5f8d89;">#5F8D89</div>
+        </div>
+        <p class="explanation">
+          Tonos azules y verdes suaves evocan tranquilidad y conexión con la naturaleza, mientras que grises neutros aportan estabilidad visual. Úsalos para transmitir paz y serenidad.
+        </p>
+      </div>
+
+      <!-- Energía -->
+      <div class="palette-box energia">
+        <h2>Paleta: Energía / Vitalidad</h2>
+        <div class="palette-blocks">
+          <div class="color-block" style="--col: #ff6f61;">#FF6F61</div>
+          <div class="color-block" style="--col: #ffcc5c;">#FFCC5C</div>
+          <div class="color-block" style="--col: #ff9f1c;">#FF9F1C</div>
+          <div class="color-block" style="--col: #f25f5c;">#F25F5C</div>
+          <div class="color-block" style="--col: #ff3b3f;">#FF3B3F</div>
+        </div>
+        <p class="explanation">
+          Rojos y naranjas vibrantes simbolizan calor y acción, complementados con amarillos que irradian optimismo y dinamismo. Perfecto para llamar la atención y transmitir actividad.
+        </p>
+      </div>
+
+      <!-- Misterio -->
+      <div class="palette-box misterio">
+        <h2>Paleta: Misterio / Sofisticación</h2>
+        <div class="palette-blocks">
+          <div class="color-block" style="--col: #2c3e50;">#2C3E50</div>
+          <div class="color-block" style="--col: #34495e;">#34495E</div>
+          <div class="color-block" style="--col: #7f8c8d;">#7F8C8D</div>
+          <div class="color-block" style="--col: #bdc3c7;">#BDC3C7</div>
+          <div class="color-block" style="--col: #1f2833;">#1F2833</div>
+        </div>
+        <p class="explanation">
+          Tonos oscuros y neutros profundos evocan intriga y elegancia. Úsalos para diseños sofisticados, misteriosos o de alto contraste con un toque de sobriedad.
+        </p>
+      </div>
+
+      <!-- Felicidad -->
+      <div class="palette-box felicidad">
+        <h2>Paleta: Felicidad / Alegría</h2>
+        <div class="palette-blocks">
+          <div class="color-block" style="--col: #ffeb3b;">#FFEB3B</div>
+          <div class="color-block" style="--col: #ffc107;">#FFC107</div>
+          <div class="color-block" style="--col: #ffa000;">#FFA000</div>
+          <div class="color-block" style="--col: #ffca28;">#FFCA28</div>
+          <div class="color-block" style="--col: #ffee58;">#FFEE58</div>
+        </div>
+        <p class="explanation">
+          Amarillos brillantes y dorados evocan optimismo, alegría y calidez. Idóneos para proyectos que busquen transmitir diversión o entusiasmo.
+        </p>
+      </div>
+
+      <!-- Confianza -->
+      <div class="palette-box confianza">
+        <h2>Paleta: Confianza / Profesionalismo</h2>
+        <div class="palette-blocks">
+          <div class="color-block" style="--col: #1e3a5f;">#1E3A5F</div>
+          <div class="color-block" style="--col: #2e5b8f;">#2E5B8F</div>
+          <div class="color-block" style="--col: #4a6ea9;">#4A6EA9</div>
+          <div class="color-block" style="--col: #6b83c1;">#6B83C1</div>
+          <div class="color-block" style="--col: #8aa1e0;">#8AA1E0</div>
+        </div>
+        <p class="explanation">
+          Azules profundos y neutros transmiten estabilidad y confianza. Ideal para sitios corporativos, presentaciones o interfaces donde se busca seriedad y fiabilidad.
+        </p>
+      </div>
+
+      <!-- Naturaleza -->
+      <div class="palette-box naturaleza">
+        <h2>Paleta: Naturaleza / Frescura</h2>
+        <div class="palette-blocks">
+          <div class="color-block" style="--col: #6b8e23;">#6B8E23</div>
+          <div class="color-block" style="--col: #8fbc8f;">#8FBC8F</div>
+          <div class="color-block" style="--col: #556b2f;">#556B2F</div>
+          <div class="color-block" style="--col: #a3c4a8;">#A3C4A8</div>
+          <div class="color-block" style="--col: #3e5f3e;">#3E5F3E</div>
+        </div>
+        <p class="explanation">
+          Verdes orgánicos y tonos terrosos evocan crecimiento y renovación. Úsalos para proyectos ecológicos o que busquen conectar con la naturaleza.
+        </p>
+      </div>
+
+      <!-- Romance -->
+      <div class="palette-box romance">
+        <h2>Paleta: Romance / Pasión</h2>
+        <div class="palette-blocks">
+          <div class="color-block" style="--col: #d32f2f;">#D32F2F</div>
+          <div class="color-block" style="--col: #e57373;">#E57373</div>
+          <div class="color-block" style="--col: #f06292;">#F06292</div>
+          <div class="color-block" style="--col: #ad1457;">#AD1457</div>
+          <div class="color-block" style="--col: #c2185b;">#C2185B</div>
+        </div>
+        <p class="explanation">
+          Rojos y rosas profundos evocan amor y pasión. Úsalos en proyectos románticos o emocionales que busquen transmitir cercanía e intimidad.
+        </p>
+      </div>
+
+    <!-- Nostalgia -->
+    <div class="palette-box nostalgia">
+      <h2>Paleta: Nostalgia</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #704214;">#704214</div>
+        <div class="color-block" style="--col: #D2B48C;">#D2B48C</div>
+        <div class="color-block" style="--col: #C0A080;">#C0A080</div>
+        <div class="color-block" style="--col: #A8A8C0;">#A8A8C0</div>
+        <div class="color-block" style="--col: #B0C4DE;">#B0C4DE</div>
+      </div>
+      <p class="explanation">
+        Tonos sepia, cremas suaves y azules deslavados que evocan recuerdos cálidos y melancólicos.
+      </p>
+    </div>
+    
+    <!-- Euforia -->
+    <div class="palette-box euforia">
+      <h2>Paleta: Euforia</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #FF00FF;">#FF00FF</div>
+        <div class="color-block" style="--col: #FFFF00;">#FFFF00</div>
+        <div class="color-block" style="--col: #FF1493;">#FF1493</div>
+        <div class="color-block" style="--col: #00FFFF;">#00FFFF</div>
+        <div class="color-block" style="--col: #FF4500;">#FF4500</div>
+      </div>
+      <p class="explanation">
+        Colores neón, rosas y amarillos brillantes que transmiten una explosión de alegría y energía desbordante.
+      </p>
+    </div>
+    
+    <!-- Esperanza -->
+    <div class="palette-box esperanza">
+      <h2>Paleta: Esperanza</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #87CEEB;">#87CEEB</div>
+        <div class="color-block" style="--col: #98FB98;">#98FB98</div>
+        <div class="color-block" style="--col: #FFFFFF;">#FFFFFF</div>
+        <div class="color-block" style="--col: #E0FFFF;">#E0FFFF</div>
+        <div class="color-block" style="--col: #AFEEEE;">#AFEEEE</div>
+      </div>
+      <p class="explanation">
+        Azules cielo, verdes suaves y blancos luminosos que sugieren renovación y fe en el futuro.
+      </p>
+    </div>
+    
+    <!-- Gratitud -->
+    <div class="palette-box gratitud">
+      <h2>Paleta: Gratitud</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #FFD700;">#FFD700</div>
+        <div class="color-block" style="--col: #808000;">#808000</div>
+        <div class="color-block" style="--col: #A0522D;">#A0522D</div>
+        <div class="color-block" style="--col: #D2691E;">#D2691E</div>
+        <div class="color-block" style="--col: #CD853F;">#CD853F</div>
+      </div>
+      <p class="explanation">
+        Dorados cálidos, verdes oliva y tonos tierra que evocan aprecio, conexión y sencillez.
+      </p>
+    </div>
+    
+    <!-- Asombro -->
+    <div class="palette-box asombro">
+      <h2>Paleta: Asombro</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #4B0082;">#4B0082</div>
+        <div class="color-block" style="--col: #00BFFF;">#00BFFF</div>
+        <div class="color-block" style="--col: #C0C0C0;">#C0C0C0</div>
+        <div class="color-block" style="--col: #8A2BE2;">#8A2BE2</div>
+        <div class="color-block" style="--col: #1E90FF;">#1E90FF</div>
+      </div>
+      <p class="explanation">
+        Morados profundos, azules eléctricos y plateados brillantes que inspiran admiración y maravilla.
+      </p>
+    </div>
+    
+    <!-- Valentía -->
+    <div class="palette-box valentia">
+      <h2>Paleta: Valentía</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #B22222;">#B22222</div>
+        <div class="color-block" style="--col: #000000;">#000000</div>
+        <div class="color-block" style="--col: #FFD700;">#FFD700</div>
+        <div class="color-block" style="--col: #8B0000;">#8B0000</div>
+        <div class="color-block" style="--col: #DAA520;">#DAA520</div>
+      </div>
+      <p class="explanation">
+        Rojos intensos, negros sólidos y dorados fuertes que transmiten coraje, determinación y fuerza.
+      </p>
+    </div>
+    
+    <!-- Ternura -->
+    <div class="palette-box ternura">
+      <h2>Paleta: Ternura</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #FFC0CB;">#FFC0CB</div>
+        <div class="color-block" style="--col: #ADD8E6;">#ADD8E6</div>
+        <div class="color-block" style="--col: #FFF5EE;">#FFF5EE</div>
+        <div class="color-block" style="--col: #E6E6FA;">#E6E6FA</div>
+        <div class="color-block" style="--col: #F0E68C;">#F0E68C</div>
+      </div>
+      <p class="explanation">
+        Rosas pálidos, azules bebé y blancos cremosos que evocan cariño, suavidad y dulzura.
+      </p>
+    </div>
+    
+    <!-- Futurismo -->
+    <div class="palette-box futurismo">
+      <h2>Paleta: Futurismo</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #C0C0C0;">#C0C0C0</div>
+        <div class="color-block" style="--col: #39FF14;">#39FF14</div>
+        <div class="color-block" style="--col: #00FFEF;">#00FFEF</div>
+        <div class="color-block" style="--col: #F0F8FF;">#F0F8FF</div>
+        <div class="color-block" style="--col: #E5E4E2;">#E5E4E2</div>
+      </div>
+      <p class="explanation">
+        Colores metálicos, azules y verdes neón con blancos fríos que sugieren tecnología y vanguardia.
+      </p>
+    </div>
+    
+    <!-- Vintage -->
+    <div class="palette-box vintage">
+      <h2>Paleta: Vintage</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #D2A679;">#D2A679</div>
+        <div class="color-block" style="--col: #A67B5B;">#A67B5B</div>
+        <div class="color-block" style="--col: #8B4513;">#8B4513</div>
+        <div class="color-block" style="--col: #556B2F;">#556B2F</div>
+        <div class="color-block" style="--col: #FFF8DC;">#FFF8DC</div>
+      </div>
+      <p class="explanation">
+        Tonos envejecidos, sepia y verdes oliva que evocan épocas pasadas con un aire clásico.
+      </p>
+    </div>
+    
+    <!-- Minimalismo -->
+    <div class="palette-box minimalismo">
+      <h2>Paleta: Minimalismo</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #FFFFFF;">#FFFFFF</div>
+        <div class="color-block" style="--col: #000000;">#000000</div>
+        <div class="color-block" style="--col: #808080;">#808080</div>
+        <div class="color-block" style="--col: #FF5722;">#FF5722</div>
+        <div class="color-block" style="--col: #C0C0C0;">#C0C0C0</div>
+      </div>
+      <p class="explanation">
+        Blanco, negro y grises con un acento vibrante, para una estética limpia y funcional.
+      </p>
+    </div>
+    
+    <!-- Lujoso -->
+    <div class="palette-box lujoso">
+      <h2>Paleta: Lujoso</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #FFD700;">#FFD700</div>
+        <div class="color-block" style="--col: #000000;">#000000</div>
+        <div class="color-block" style="--col: #4B0082;">#4B0082</div>
+        <div class="color-block" style="--col: #800000;">#800000</div>
+        <div class="color-block" style="--col: #551A8B;">#551A8B</div>
+      </div>
+      <p class="explanation">
+        Dorados, negros y púrpuras profundos, con rojos vino para transmitir opulencia y elegancia.
+      </p>
+    </div>
+    
+    <!-- Onírico -->
+    <div class="palette-box onirico">
+      <h2>Paleta: Onírico</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #B0E0E6;">#B0E0E6</div>
+        <div class="color-block" style="--col: #D8BFD8;">#D8BFD8</div>
+        <div class="color-block" style="--col: #FFF0F5;">#FFF0F5</div>
+        <div class="color-block" style="--col: #E6E6FA;">#E6E6FA</div>
+        <div class="color-block" style="--col: #F0FFF0;">#F0FFF0</div>
+      </div>
+      <p class="explanation">
+        Tonos pastel, azules y morados suaves con blancos iridiscentes para un sentimiento de sueño y fantasía.
+      </p>
+    </div>
+    
+    <!-- Espiritual -->
+    <div class="palette-box espiritual">
+      <h2>Paleta: Espiritual</h2>
+      <div class="palette-blocks">
+        <div class="color-block" style="--col: #98FB98;">#98FB98</div>
+        <div class="color-block" style="--col: #AFEEEE;">#AFEEEE</div>
+        <div class="color-block" style="--col: #EE82EE;">#EE82EE</div>
+        <div class="color-block" style="--col: #DEB887;">#DEB887</div>
+        <div class="color-block" style="--col: #F5DEB3;">#F5DEB3</div>
+      </div>
+      <p class="explanation">
+        Verdes y azules suaves, violetas y tonos tierra que sugieren calma interior y conexión profunda.
+      </p>
+    </div>
+    </section>
+
+    <!-- Información adicional -->
+    <section id="info" class="info">
+      <h2>Acerca de este proyecto</h2>
+        <p>Basamos cada paleta en la investigación de psicología del color, apoyándonos en asociaciones probadas</p>
+        <p>en marketing y diseño para reforzar sensaciones: desde la calma y la confianza hasta la energía y la creatividad.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contacto" class="footer">
+    <p>&copy; 2025 Espectro Emocional | Generador de Paletas de Colores para Emociones</p>
+    <p>Desarrollado por illonono</p>
+  </footer>
+</body>
+</html>
